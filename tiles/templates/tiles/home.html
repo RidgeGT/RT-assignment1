@@ -1,5 +1,6 @@
 {% extends "tiles/base.html"%}
 {%block content%}
+        <p>sort by <a href="{{HOME_URL}}/sort/age">age</a> <a href = "{{HOME_URL}}/sort/username">username</a></p>
         {%for tile in tiles%}
         <article class="media content-section">
             <img class="article-img" src="{{tile.image}}">

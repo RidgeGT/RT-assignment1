@@ -15,6 +15,14 @@ p {
     text-align: center;
 }
 
+.article-img-large {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 480px;
+    height: 300px;
+}
+
 .article-metadata {
     margin: 0 auto;
     padding: 0;
@@ -39,6 +47,12 @@ p {
 .media {
     width: 180px;
     height: 170px;
+    display: inline-block;
+}
+
+.media-large {
+    width: 540px;
+    height: 510px;
     display: inline-block;
 }
 

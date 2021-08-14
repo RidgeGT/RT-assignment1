@@ -6,7 +6,7 @@
             <img class="article-img" src="{{tile.image}}">
             <div class="media-body">
                 <div class="article-metadata">
-                    <p> <a href="#">{{tile.username}}</a> ({{tile.age}})</p>
+                    <p> <a href="{% url 'profile_detail' tile.id %}">{{tile.username}}</a> ({{tile.age}})</p>
                     <p class="article-content">{{tile.description}}</p>
                 </div>
             </div>

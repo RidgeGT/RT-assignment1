@@ -20,3 +20,6 @@ class ProfileListViewName(ListView):
     template_name = 'tiles/home.html'
     context_object_name = 'tiles'
     ordering = ['username']
+
+class ProfileDetailView(DetailView):
+    model = Tile

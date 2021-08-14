@@ -1,0 +1,13 @@
+{% extends "tiles/base.html"%}
+{%block content%}
+        <p><a href="{{HOME_URL}}/">Go Home</a></p>
+        <article class="media-large content-section">
+            <img class="article-img-large" src="{{tile.image}}">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <p> <a href="#">{{tile.username}}</a> ({{tile.age}})</p>
+                    <p class="article-content-untrunctated">{{tile.description}}</p>
+                </div>
+            </div>
+        </article>
+{%endblock content%}

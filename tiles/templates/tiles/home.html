@@ -1,0 +1,14 @@
+{% extends "tiles/base.html"%}
+{%block content%}
+        {%for tile in tiles%}
+        <article class="media content-section">
+            <img class="article-img" src="{{tile.image}}">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <p> <a href="#">{{tile.username}}</a> ({{tile.age}})</p>
+                    <p class="article-content">{{tile.description}}</p>
+                </div>
+            </div>
+        </article>
+        {%endfor%}
+{%endblock content%}
